@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5249/api/movies'; // Change port if needed
+const API_URL = 'http://localhost:5049/api/Movies';
 
 export const getMovies = () => axios.get(API_URL);
 export const addMovie = (movie) => axios.post(API_URL, movie);

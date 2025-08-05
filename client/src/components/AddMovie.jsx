@@ -26,6 +26,9 @@ const AddMovie = ({ onAdd }) => {
       <h4>Add Movie</h4>
       {['name', 'casting', 'releaseDate', 'director', 'producer'].map(field => (
         <div className="mb-2" key={field}>
+          <label className="form-label">
+            {field.charAt(0).toUpperCase() + field.slice(1)}
+          </label>
           <input
             type={field === 'releaseDate' ? 'date' : 'text'}
             name={field}
